@@ -27,7 +27,10 @@ USER root
 RUN cd /home/ec2-user/DEV-WORKSHOP/guestbook-nodejs/
 RUN npm install
 
-# Run the container and execute the application
-#docker run -d -e DB_HOST="yourdbconnectionstring" -e DB_USER="root" -e DB_PASSWORD="password" -e DB_NAME="demo" -p 80:80 container:tag node home/ec2-user/DEV-WORKSHOP/guestbook-nodejs/bin/www
+# Start the app
+CMD ["node", "home/ec2-user/DEV-WORKSHOP/guestbook-nodejs/bin/www"]
 
 EXPOSE 80
+
+# Run the container and execute the application
+#docker run -d -e DB_HOST="yourdbconnectionstring" -e DB_USER="root" -e DB_PASSWORD="password" -e DB_NAME="demo" -p 80:80 container:tag
