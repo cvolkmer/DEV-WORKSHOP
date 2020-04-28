@@ -1,4 +1,5 @@
 var cfg = require('nconf');
+cfg.argv().file({ file: "conf/guestbook.json" });
 var mysql = require('mysql');
 var db_config = {
     host: (process.env.db_info && process.env.db_info.host) || cfg.get('db:host'),
