@@ -26,7 +26,7 @@ sudo yum install -y git mysql mariadb-server
 cd /opt
 sudo mkdir dev
 cd dev/
-sudo git clone https://github.com/alfallouji/DEV-WORKSHOP.git
+sudo git clone https://github.com/cvolkmer/DEV-WORKSHOP.git
 
 # Copy config file
 sudo cp /opt/dev/DEV-WORKSHOP/guestbook-nodejs/conf/guestbook.json.default /opt/dev/DEV-WORKSHOP/guestbook-nodejs/conf/guestbook.json

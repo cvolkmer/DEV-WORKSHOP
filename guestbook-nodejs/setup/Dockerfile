@@ -21,7 +21,7 @@ RUN cd /home/ec2-user/
 
 # Deploy code
 #RUN cd /opt/demo/
-RUN git clone https://github.com/alfallouji/DEV-WORKSHOP.git /home/ec2-user/DEV-WORKSHOP
+RUN git clone https://github.com/cvolkmer/DEV-WORKSHOP.git /home/ec2-user/DEV-WORKSHOP
 
 # Copy config file
 RUN cp /home/ec2-user/DEV-WORKSHOP/guestbook-nodejs/conf/guestbook.json.default /home/ec2-user/DEV-WORKSHOP/guestbook-nodejs/conf/guestbook.json
