@@ -1,2 +1,2 @@
 # DEV-WORKSHOP
-Sample code 
+Some sample code 
