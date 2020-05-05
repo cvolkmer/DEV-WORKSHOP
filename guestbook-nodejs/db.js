@@ -1,5 +1,3 @@
-var cfg = require('nconf');
-cfg.argv().file({ file: "conf/guestbook.json" });
 var mysql = require('mysql');
 var db_config = {
     host: (process.env.DB_HOST),
